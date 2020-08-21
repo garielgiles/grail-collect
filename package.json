@@ -1,5 +1,5 @@
 {
-  "name": "kickscollection",
+  "name": "grail-collect",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ggiles4/kickscollection.git"
+    "url": "git+https://github.com/ggiles4/grail-collect.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ggiles4/kickscollection/issues"
+    "url": "https://github.com/ggiles4/grail-collect/issues"
   },
-  "homepage": "https://github.com/ggiles4/kickscollection#readme",
+  "homepage": "https://github.com/ggiles4/grail-collect#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
