@@ -1,1 +1,1 @@
-# kickscollection
+# Grail Collect
