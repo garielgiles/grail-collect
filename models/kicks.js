@@ -18,11 +18,11 @@ const kickSchema = new Schema({
         type: Number,
         required: true
       },
-    Worn: {
+    worn: {
       type: Boolean,
       default: false
     },
-    size:{
+    description:{
         type: String,
         required: false
       },
