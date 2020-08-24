@@ -16,6 +16,15 @@ router.get('/add', (req, res) => {
     res.render('New');
 });
 
+// Delete
+router.delete("/:id", (req, res) => {
+  // Delete document from collection
+  Kick.findByIdAndRemove(req.params.id, (err, kick) => {
+    res.redirect("/collection");
+  });
+});
+
+
 /* Update */
 router.put('/:id', (req, res)=>{
     if(req.body.worn === 'on'){
@@ -59,12 +68,22 @@ router.get('/:id/edit', (req, res)=>{
           error: error.message
         })
       } else {
-        res.render('/collection/Edit', {
+        res.render('Edit', {
           kicks: foundKick
         })
       }
     })
   })
+
+  // Show
+router.get("/:id", (req, res)=>{
+  Kick.findById(req.params.id, (error, showKick)=>{
+      console.log(req.params.id)
+      res.render('Show', {
+          kicks: showKick,
+      });
+  });
+});
 
   module.exports = router
 
