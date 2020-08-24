@@ -11,7 +11,8 @@ class New extends React.Component {
                     Size: <input type="text" name="size" /><br />
                     Resell: <input type="text" name="resell" /><br />
                     Retail: <input type="text" name="retail" /><br />
-                    Worn: <input type="checkbox" name="worn" /><br />
+                    Deadstock: <input type="checkbox" name="deadstock"/>
+                    {/* Worn: <input type="checkbox" name="worn" /><br /> */}
                     Description: <input type="text" name="description" /><br />
                     Image: <input type="text" name="image" /><br />
                     {/* <input type="file" id="img" name="image" accept="image/*" /><br /> */}

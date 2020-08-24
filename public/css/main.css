@@ -1,3 +1,7 @@
+.body {
+    background-color: gainsboro;
+}
+
 .header {
     color: red;
 }
@@ -17,18 +21,21 @@
     src: url(Headster-RegularDemo.ttf)
 }
 
+.navLink {
+    text-decoration: none;
+}
+
+.pageFont {
+    font-family: headster;
+    font-size: 70px;
+    text-align: center;
+}
+
 .brandFont  {
     font-family: headster;
     font-size: 200px;
     text-align: center;
 }
-
-h1 {
-    font-family: headster;
-    font-size: 150px;
-    text-align: center;
-}
-
 
 li {
     list-style-type: none;

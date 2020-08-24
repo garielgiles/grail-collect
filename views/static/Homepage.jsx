@@ -1,5 +1,5 @@
 const React = require('react')
-const Default = require('./components/Default.jsx')
+const Default = require('../components/Default.jsx')
 
 
 class Homepage extends React.Component {

@@ -48,10 +48,10 @@ router.put('/:id', (req, res)=>{
 
   // Create
 router.post("/", (req, res) => {
-    if(req.body.worn === 'on'){
-        req.body.worn = true
+    if(req.body.deadstock === 'on'){
+        req.body.deadstock = true
       } else {
-        req.body.worn = false
+        req.body.deadstock = false
       }
     // Use Model to create KICKS Document
     Kick.create(req.body, (error, createdKicks) => {

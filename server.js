@@ -41,8 +41,14 @@ app.use(
 
 // HOMEPAGE ================
 app.get('/', (req, res) => {
-    res.render('Homepage')
+    res.render('static/Homepage')
 })
+
+// GALLERY ================
+app.get('/gallery', (req, res) => {
+    res.render('static/Gallery')
+})
+
 
 const kicksController = require('./controllers/kicks.js')
 app.use('/collection', kicksController)

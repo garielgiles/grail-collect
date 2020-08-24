@@ -7,14 +7,15 @@ class Edit extends React.Component {
     return (
         <Default>
       <div>
-        <h1>Edit Kicks</h1>
+        <h1 className="pageFont">Edit Kicks</h1>
      
         <form action={`/collection/${_id}?_method=PUT`} method="POST">
         Name: <input type="text" name="name" /><br />
                     Size: <input type="text" name="size" /><br />
                     Resell: <input type="text" name="resell" /><br />
                     Retail: <input type="text" name="retail" /><br />
-                    Worn: <input type="checkbox" name="worn" /><br />
+                    Deadstock: <input type="checkbox" name="deadstock"/>
+                    {/* Worn: <input type="checkbox" name="worn" /><br /> */}
                     Description: <input type="text" name="description" /><br />
                     Image: <input type="text" name="image" /><br />
                     <input type="submit" name="" value="Create Sneaker" />
