@@ -26,13 +26,15 @@ const kickSchema = new Schema({
         type: String,
         required: true
       },
+      
     image: {
       type: String,
       required: true
-    }
+    },
   }, {
     timestamps: true
   })
+
 
 const Kick = mongoose.model('Kick', kickSchema)
 module.exports = Kick;

@@ -4,7 +4,27 @@ const Default = require('./components/Default.jsx')
 
 class Index extends React.Component {
     render() {
-
+        const { name, image, size, resell, retail, description, _id } = this.props.kicks;
+        // let priceSum= resell.reduce(function(a, b){
+        //     return a+b;
+        //     },0);
+        //     console.log(priceSum)
+        // $(document).ready(function(e) {
+        //     $("input").change(function() {
+        //         let toplam=0;
+        //         $("input[name=resell]").each(function() {
+        //             toplam = toplam + parseInt($(this).val());
+        //         })
+        //         $("input[name=toplam_resell").val(toplam);
+        //     })
+        // })
+        let collection = [
+            {
+                resellCost: {resell}
+            }
+        ]
+        collection = (collection)
+        let total = (collection.reduce((a, c) => (a+c.resell), 0))
         return (
             <Default>
                 <div>
@@ -15,7 +35,9 @@ class Index extends React.Component {
                     </nav>
                     <ul>
                         {this.props.kicks.map((kick, index) => {
+                            
                             return (
+                                
                                 <li key={kick._id}>
                                     {kick.name}<br />
                                     <a href={`/collection/${kick._id}`}><img className="display" src={`${kick.image}`} /></a><br />
@@ -28,10 +50,10 @@ class Index extends React.Component {
                                     </form>
                                 </li>
                             )
+                            
                         })
                         }
                     </ul>
-
                 </div>
             </Default>
         )

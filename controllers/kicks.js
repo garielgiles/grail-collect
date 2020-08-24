@@ -6,14 +6,17 @@ const Kick = require('../models/kicks.js');
 router.get('/', (req, res) => {
     Kick.find({}, (error, allKicks)=>{
         res.render('Index', {
-          kicks: allKicks
+          kicks: allKicks,
+          // currentUser: req.session.currentUser
         })
       })
   })
 
 // New
 router.get('/add', (req, res) => {
-    res.render('New');
+    res.render('New', {
+  // currentUser: req.session.currentUser
+    });
 });
 
 // Delete
@@ -69,7 +72,8 @@ router.get('/:id/edit', (req, res)=>{
         })
       } else {
         res.render('Edit', {
-          kicks: foundKick
+          kicks: foundKick,
+          // currentUser: req.session.currentUser
         })
       }
     })
@@ -81,6 +85,7 @@ router.get("/:id", (req, res)=>{
       console.log(req.params.id)
       res.render('Show', {
           kicks: showKick,
+          // currentUser: req.session.currentUser
       });
   });
 });

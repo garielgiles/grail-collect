@@ -4,11 +4,14 @@ const Default = require('./components/Default.jsx')
 class Show extends React.Component {
     render() {
         const { name, image, size, resell, retail, description, _id } = this.props.kicks;
+       
         return (
+            
             <Default>
                 <div>
-                    <h1>Sneaker Details</h1>
-                    <h2>{name}</h2>
+                
+                    <h1>Grail Details</h1>
+                    <h1>{name}</h1>
                     <img className="showDisplay" src={`${image}`} />
                     <h4>{size}</h4>
                     <h4>${resell}</h4>
@@ -18,6 +21,7 @@ class Show extends React.Component {
                     <form action={`/collection/${_id}?_method=DELETE`} method="POST">
                         <input type="submit" value="Delete" />
                     </form>
+                    
                 </div>
             </Default>
         )

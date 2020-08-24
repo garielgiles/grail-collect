@@ -7,7 +7,7 @@ class Edit extends React.Component {
     return (
         <Default>
       <div>
-        <h1>Edit Page</h1>
+        <h1>Edit Kicks</h1>
      
         <form action={`/collection/${_id}?_method=PUT`} method="POST">
         Name: <input type="text" name="name" /><br />
