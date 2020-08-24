@@ -7,7 +7,7 @@ const kickSchema = new Schema({
       required: true
     },
     size:{
-      type: Number,
+      type: String,
       required: true
     },
     resell:{
@@ -22,10 +22,14 @@ const kickSchema = new Schema({
       type: Boolean,
       default: false
     },
-    description:{
+    description: {
         type: String,
-        required: false
+        required: true
       },
+    image: {
+      type: String,
+      required: true
+    }
   }, {
     timestamps: true
   })
