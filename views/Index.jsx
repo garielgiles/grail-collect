@@ -1,6 +1,6 @@
 const React = require('react')
 const Default = require('./components/Default.jsx');
-const { func } = require('prop-types');
+
 
 
 class Index extends React.Component {
@@ -25,9 +25,6 @@ class Index extends React.Component {
         //     }
             
         // }
-            
-        
-        
         return (
             <Default>
 
@@ -37,9 +34,8 @@ class Index extends React.Component {
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <title>Collection</title>
                     </head>
-                    <body className="body">
+                    <body>
                         <div>
-                            {/* {`${worth()}`} */}
                             <h1 className="pageFont">Collection</h1>
                             <nav>
                                 <ul>

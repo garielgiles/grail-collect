@@ -1,5 +1,34 @@
+/* :root {
+    27, 172, 183
+    18, 116, 219
+
+    189,46,42
+    227,196,94
+} */
+
+@keyframes mymove {
+    from {
+        background-color: #EDF5E1;
+    }
+    to {
+        background-color: #5CDB95;
+    }
+}
+
+@keyframes mymove {
+    from {
+        background-color: #EDF5E1;
+    }
+    to {
+        background-color: #5CDB95;
+    }
+}
+
 .body {
-    background-color: gainsboro;
+    background: #EDF5E1;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    
 }
 
 .header {
@@ -24,19 +53,34 @@
 .navLink {
     text-decoration: none;
 }
-
+@keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
 .pageFont {
     font-family: headster;
     font-size: 70px;
-    text-align: center;
+    
 }
 
-.brandFont  {
+.brandFont {
     font-family: headster;
     font-size: 200px;
-    text-align: center;
+    animation: bounceIn 2s;
+    color: #05386B;
 }
+
 
 li {
     list-style-type: none;
 }
+
