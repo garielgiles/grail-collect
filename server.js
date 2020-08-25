@@ -19,7 +19,10 @@ const db = mongoose.connection;
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
-});
+}).catch(e => {
+    console.error(e.message);
+  });
+  ;
 
 db.once('open', () => {
     console.log('Mongo is working!');
