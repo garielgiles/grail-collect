@@ -7,7 +7,7 @@ const app = express()
 const PORT = process.env.PORT || 3000;
 const reactViews = require('express-react-views');
 const Kick = require('./models/kicks.js');
-const session = require('express-session')
+
 
 const createEngine = reactViews.createEngine
 
@@ -33,13 +33,7 @@ app.use(express.static('public'));
 app.set('view engine', 'jsx');
 app.engine('jsx', createEngine());
 app.use(methodOverride('_method'));
-app.use(
-    session({
-      secret: process.env.SECRET,
-      resave: false,
-      saveUninitialized: false
-    })
-  )
+
 
 // HOMEPAGE ================
 app.get('/', (req, res) => {
