@@ -69,12 +69,13 @@
 .pageFont {
     font-family: headster;
     font-size: 70px;
-    
+    text-align: center;
 }
 
 .brandFont {
     font-family: headster;
     font-size: 200px;
+    text-align: center;
     animation: bounceIn 2s;
     color: #05386B;
 }
