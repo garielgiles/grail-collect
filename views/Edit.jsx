@@ -14,7 +14,7 @@ class Edit extends React.Component {
                     Size: <input type="text" name="size" /><br />
                     Resell: <input type="text" name="resell" /><br />
                     Retail: <input type="text" name="retail" /><br />
-                    Deadstock: <input type="checkbox" name="deadstock"/>
+                    Deadstock: <input type="checkbox" name="deadstock"/><br />
                     {/* Worn: <input type="checkbox" name="worn" /><br /> */}
                     Description: <input type="text" name="description" /><br />
                     Image: <input type="text" name="image" /><br />

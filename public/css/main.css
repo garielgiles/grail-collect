@@ -6,53 +6,41 @@
     227,196,94
 } */
 
-@keyframes mymove {
-    from {
-        background-color: #EDF5E1;
-    }
-    to {
-        background-color: #5CDB95;
-    }
-}
-
-@keyframes mymove {
-    from {
-        background-color: #EDF5E1;
-    }
-    to {
-        background-color: #5CDB95;
-    }
-}
-
-.body {
-    background: #EDF5E1;
-    animation: mymove 5s;
-    animation-fill-mode: forwards;
-    
-}
-
-.header {
-    color: red;
-}
-
-.display {
-    height: 20%;
-    width: 30%;
-}
-
-.showDisplay {
-    height: 30%;
-    width: 50%;
-}
-
+/* ========== GENERAL ========== */
 @font-face {
     font-family: headster;
     src: url(Headster-RegularDemo.ttf)
 }
 
-.navLink {
-    text-decoration: none;
+
+/* ============== HOMEPAGE ============== */
+@keyframes mymove {
+    from {
+        background-color: #EDF5E1;
+    }
+    to {
+        background-color: #5CDB95;
+    }
 }
+
+@keyframes mymove {
+    from {
+        background-color: #EDF5E1;
+    }
+    to {
+        background-color: #5CDB95;
+    }
+}
+
+.homeBody {
+    background: #EDF5E1;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    margin: 150px;
+    text-align: center;
+    
+}
+
 @keyframes bounceIn {
     0% {
       transform: scale(0.1);
@@ -66,22 +54,39 @@
       transform: scale(1);
     }
   }
+
+
+.brandFont {
+    font-family: headster;
+    font-size: 150px;
+    text-align: center;
+    animation: bounceIn 2s;
+    color: #05386B;
+}
+
+#enterBtn {
+    margin: 60px;
+    width: 300px;
+}
+
+/* ========== GENERAL ========== */
+
+li {
+    list-style-type: none;
+}
+
 .pageFont {
     font-family: headster;
     font-size: 70px;
     text-align: center;
 }
 
-.brandFont {
-    font-family: headster;
-    font-size: 200px;
-    text-align: center;
-    animation: bounceIn 2s;
-    color: #05386B;
+.display {
+    height: 20%;
+    width: 30%;
 }
 
-
-li {
-    list-style-type: none;
+.showDisplay {
+    height: 30%;
+    width: 50%;
 }
-

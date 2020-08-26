@@ -15,10 +15,10 @@ class Homepage extends React.Component {
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossOrigin="anonymous"></link>
                     <title>Grail Collect</title>
                 </head>
-                <body className="body">
+                <body className="homeBody">
                     <div className="">
                     <h1 className="brandFont">Grail Collect</h1>
-                    </div><a href="/collection" className="btn btn-outline-primary btn-lg btn-lg">Enter Collection</a>
+                    <a href="/collection" className="btn btn-outline-primary btn-lg btn-lg" id="enterBtn">Enter Collection</a></div>
                 </body>
             </html>
 
