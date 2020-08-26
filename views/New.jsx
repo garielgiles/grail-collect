@@ -8,7 +8,7 @@ class New extends React.Component {
                 <body className="pageBody">
 
 
-                    <div className="">
+                    <div>
                         <title>Add Sneaker</title>
                         <div>
                             <nav class="navbar fixed-top navbar-light bg-light">

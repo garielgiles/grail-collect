@@ -37,10 +37,14 @@
     animation: mymove 5s;
     animation-fill-mode: forwards;
     margin: 150px;
-    text-align: center;    
+    display: flex;
+    justify-content: center;
 }
 
-
+#enterBtn {
+    display: flex;
+    justify-content: center;
+}
 
 @keyframes bounceIn {
     0% {
@@ -112,14 +116,6 @@ li {
 .link:hover {
     text-decoration: #5CDB95;
 }
-
-
-
-.showDisplay {
-    height: 30%;
-    width: 50%;
-}
-
 
 
 /* NEW */

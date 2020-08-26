@@ -15,9 +15,9 @@ class Homepage extends React.Component {
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossOrigin="anonymous"></link>
                     <title>Grail Collect</title>
                 </head>
-                <body className="homeBody">
+                <body className="homeBody"> <div className="">
                     <img src="/css/GrailCollect.png" alt=""/>
-                    <div className="">
+                   
                     {/* <h1 className="brandFont">Grail Collect</h1> */}
                     
                     <a href="/collection" className="btn btn-outline-primary btn-sm" id="enterBtn">Enter Collection</a></div>
