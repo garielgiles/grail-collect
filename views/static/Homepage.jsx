@@ -16,9 +16,11 @@ class Homepage extends React.Component {
                     <title>Grail Collect</title>
                 </head>
                 <body className="homeBody">
+                    <img src="/css/GrailCollect.png" alt=""/>
                     <div className="">
-                    <h1 className="brandFont">Grail Collect</h1>
-                    <a href="/collection" className="btn btn-outline-primary btn-lg btn-lg" id="enterBtn">Enter Collection</a></div>
+                    {/* <h1 className="brandFont">Grail Collect</h1> */}
+                    
+                    <a href="/collection" className="btn btn-outline-primary btn-sm" id="enterBtn">Enter Collection</a></div>
                 </body>
             </html>
 

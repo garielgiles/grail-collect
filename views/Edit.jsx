@@ -20,6 +20,7 @@ class Edit extends React.Component {
                     Image: <input type="text" name="image" /><br />
                     <input type="submit" name="" value="Create Sneaker" />
         </form>
+        
       </div>
       </Default>
     );
